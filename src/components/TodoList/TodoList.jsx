@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-
+import TodoForm from "../TodoForm/TodoForm";
 
 export default function TodoList() {
   const [todos, setTodos] = useState([
     { id: "123", text: "aaa" },
     { id: "124", text: "bbb" },
   ]);
-  return <section>
-    <ul>
-        {todos.map( todo => (
-            <li key={todo.index}>{todo.text}</li>
-        ))}
-    </ul>
+  const handleAdd = (todo) => setTodos([...todos, todo]);
 
-  </section>;
+  return (
+    <section>
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>{todo.text}</li>
+        ))}
+        <TodoForm onAdd={handleAdd} />
+      </ul>
+    </section>
+  );
 }
