@@ -1,26 +1,33 @@
 import "./App.css";
+import { useState } from "react";
+import TodoList from "./components/TodoList/TodoList";
 
 function App() {
-  const toDos = ["할일1", "할일2", "할일3"];
+  const toDos = ["할일1", "할일2", "할일3","gkfsdf"];
+  const [toDo, setToDo] = useState("");
 
-  // const handleAddClick = () =>{
+  const handleAdd = (event) => {
+    event.preventDefault();
+    console.log(toDo);
+    console.log(toDos);
+    // toDos.push(toDo);
+    toDos = [...toDo, toDo]
+    console.log(toDos);
+    
+  };
 
-  // }
+
   return (
     <div>
-      <h1> 할일 목록 </h1>
-      <ul>
-        {toDos.map((toDo, index) => {
-          return (
-            <li key={index}>
-              {toDo} <button>삭제</button>
-            </li>
-          );
-        })}
-      </ul>
-      <form>
-        <input type="text" />
-        {/* <button onClick={handleAddClick}>추가</button> */}
+   
+      <form onSubmit={handleAdd}>
+        <input
+          type="text"
+          name="toDo"
+          value={toDo}
+          onChange={(e) => setToDo(e.target.value)}
+        />
+        <button>추가</button>
       </form>
     </div>
   );
