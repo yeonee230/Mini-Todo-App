@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TodoForm from "../TodoForm/TodoForm";
+import { AiFillDelete } from 'react-icons/ai';
 
 export default function TodoList() {
   const [todos, setTodos] = useState([
@@ -7,12 +8,18 @@ export default function TodoList() {
     { id: "124", text: "bbb" },
   ]);
   const handleAdd = (todo) => setTodos([...todos, todo]);
+  const handleDel = (todos) =>{
+    
+  }
 
   return (
     <section>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.text}</li>
+          <li key={todo.id}>
+            <input type="checkbox" name="check" id="check" />{todo.text}
+            <button onClick={handleDel}><AiFillDelete/></button>
+            </li>
         ))}
         <TodoForm onAdd={handleAdd} />
       </ul>
