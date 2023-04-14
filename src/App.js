@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  const toDos = ["할일1", "할일2", "할일3"];
+
+  // const handleAddClick = () =>{
+
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> 할일 목록 </h1>
+      <ul>
+        {toDos.map((toDo, index) => {
+          return (
+            <li key={index}>
+              {toDo} <button>삭제</button>
+            </li>
+          );
+        })}
+      </ul>
+      <form>
+        <input type="text" />
+        {/* <button onClick={handleAddClick}>추가</button> */}
+      </form>
     </div>
   );
 }
