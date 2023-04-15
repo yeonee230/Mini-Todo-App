@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Todo from "../Todo/Todo";
 import TodoForm from "../TodoForm/TodoForm";
 
 
@@ -21,12 +22,10 @@ export default function TodoList() {
     <section>
       <ul>
         {todos.map((item) => (
-          <li key={item.id}
-            todo={item}
-            onUpdate={handleUpdate}
-            onDelet={handleDel}
-            >
-          </li>
+          <Todo key={item.id}
+          todo={item}
+          onUpdate={handleUpdate}
+          onDelete={handleDel} />
         ))}
         <TodoForm onAdd={handleAdd} />
       </ul>
