@@ -8,7 +8,7 @@ function App() {
   const [filter, setFilter] = useState(filters[0]);
 
   return (
-    <div>
+    <>
       <Header
         filters={filters}
         filter={filter}
@@ -18,7 +18,7 @@ function App() {
         }
       />
       <TodoList filter={filter} />
-    </div>
+    </>
   );
 }
 

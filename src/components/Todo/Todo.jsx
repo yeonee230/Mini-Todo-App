@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillDelete } from "react-icons/ai";
+import styles from "./Todo.module.css";
 
 export default function Todo({ todo, onUpdate, onDelete }) {
   const { text, status } = todo;
@@ -12,17 +13,22 @@ export default function Todo({ todo, onUpdate, onDelete }) {
   };
 
   return (
-    <li>
+    <li className={styles.todo}>
       <input
+        className={styles.checkbox}
         type="checkbox"
         id="check"
         checked={status === "completed"}
         onChange={handleChange}
       />
-      <label htmlFor="check">{text}</label>
-      <button onClick={handleDelete}>
-        <AiFillDelete />
-      </button>
+      <label htmlFor="check" className={styles.text}>
+        {text}
+      </label>
+      <span className={styles.icon}>
+        <button onClick={handleDelete} className={styles.button}>
+          <AiFillDelete />
+        </button>
+      </span>
     </li>
   );
 }

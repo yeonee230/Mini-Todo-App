@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Todo from "../Todo/Todo";
 import TodoForm from "../TodoForm/TodoForm";
+import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
@@ -20,8 +21,8 @@ export default function TodoList({ filter }) {
 
   const filtered = getFilteredItems(todos, filter);
   return (
-    <section>
-      <ul>
+    <section className={styles.container}>
+      <ul className={styles.list}>
         {filtered.map((item) => (
           <Todo
             key={item.id}
@@ -30,8 +31,8 @@ export default function TodoList({ filter }) {
             onDelete={handleDel}
           />
         ))}
-        <TodoForm onAdd={handleAdd} />
       </ul>
+      <TodoForm onAdd={handleAdd} />
     </section>
   );
 }
