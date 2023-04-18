@@ -1,11 +1,15 @@
 :root {
-  --color-bg-dark: #201a1c;
   --color-bg: #FCEFF7;
   --color-main: #fffbff;
   --color-accent: #b80069;
   --color-text-light: #f2dde2;
-  --color-text-dark: #201a1c;
   --color-scrollbar: #FCEFF7;
+}
+
+html.dark {
+  --color-bg: #201a1c;
+  --color-text: #201a1c;
+  --color-main: #b478b4;
 }
 
 * {

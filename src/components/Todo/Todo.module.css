@@ -38,7 +38,11 @@
 
 .button {
   font-size: 1.2rem;
-  color: var(--color-text);
+  color: var(--color-accent);
   background-color: transparent;
   cursor: pointer;
+}
+
+.button:hover{
+  color: var(--color-main);
 }
