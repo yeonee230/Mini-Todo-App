@@ -8,8 +8,9 @@
 
 html.dark {
   --color-bg: #201a1c;
-  --color-text: #201a1c;
-  --color-main: #b478b4;
+  --color-text: #EBDFE1;
+  --color-main: #2A2225;
+  --color-accent: #FEAFCB;
 }
 
 * {
