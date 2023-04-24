@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mini-todo-app/static/css/main.ff98645f.css",
+    "main.js": "/mini-todo-app/static/js/main.ed20c98b.js",
+    "static/js/787.200a91a9.chunk.js": "/mini-todo-app/static/js/787.200a91a9.chunk.js",
+    "index.html": "/mini-todo-app/index.html",
+    "main.ff98645f.css.map": "/mini-todo-app/static/css/main.ff98645f.css.map",
+    "main.ed20c98b.js.map": "/mini-todo-app/static/js/main.ed20c98b.js.map",
+    "787.200a91a9.chunk.js.map": "/mini-todo-app/static/js/787.200a91a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff98645f.css",
+    "static/js/main.ed20c98b.js"
+  ]
+}
