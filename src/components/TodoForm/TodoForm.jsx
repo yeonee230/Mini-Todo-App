@@ -10,7 +10,7 @@ export default function TodoForm({ onAdd }) {
     e.preventDefault();
     if (text.trim().length === 0) return;
 
-    onAdd({ id: uuidv4(), text });
+    onAdd({ id: uuidv4(), text, status:"active" });
     setText(""); //text 값을 "" 로 만든다. (위의 useState 확인)
   };
 

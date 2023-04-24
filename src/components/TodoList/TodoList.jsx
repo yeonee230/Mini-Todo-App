@@ -41,7 +41,7 @@ export default function TodoList({ filter }) {
 function getFilteredItems(todos, filter) {
   if (filter === "all") {
     return todos;
-  } //FIXME: active 되었을 때 필터링 되지 않음.
+  } 
   return todos.filter((todo) => todo.status === filter);
 }
 
