@@ -1,9 +1,12 @@
-# 리액트로 만든 투두앱 
+# 미니 투두앱 (Mini To-Do App Built by ReactJS)
 
-## 만들어야할 기능 
-* 할일 목록 보여주기 ✅
-* 할일 추가 ✅
-* 할일 삭제 ✅
-* 상단 필터 (전체, 해야할 일, 완료된 일)✅
-* localStorage에 할일 목록 저장하기
-* 다크모드 
+## 기능
+* 할일 목록을 보여줍니다. (Show to-do list.)
+* 할일을 추가할 수 있습니다. (Add to-do)
+* 할일을 삭제할 수 있습니다. (Delete to-do)
+* 상단 필터를 통해 전체, 해야할 일, 완료된 일을 볼 수 있습니다. (Top filters - all, active, completed)
+* 할일 목록을 localStorage에 저장할 수 있습니다. (Save to-do list in localStorage)
+* 다크모드를 지원합니다. (Darkmode)
+
+## 데모 사이트 
+https://yeonee230.github.io/mini-todo-app/

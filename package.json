@@ -44,5 +44,5 @@
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1"
   },
-  "homepage": "https://yeonee230.github.io/mini-todo-app/"
+  "homepage": "https://yeonee230.github.io/mini-todo-app"
 }
