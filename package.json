@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d deploy",
+    "predeploy": "yarn build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +43,6 @@
   "packageManager": "yarn@3.5.0",
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1"
-  }
+  },
+  "homepage": "https://yeonee230.github.io/mini-todo-app/"
 }
